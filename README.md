@@ -9,6 +9,9 @@ Multi-host NixOS flake.
 ## Installation
 
 ```bash
-git clone https://github.com/iFanatical/fannixos /mnt/etc/nixos
-sudo nixos-install --flake /mnt/etc/nixos#laptop
+cd /tmp
+git clone https://github.com/iFanatical/fannixos.git
+sudo nixos-generate-config --root /mnt
+sudo cp /mnt/etc/nixos/hardware-configuration.nix /tmp/fannixos/hosts/laptop/
+sudo nixos-install --flake /tmp/fannixos/nixos#laptop --no-root-passwd
 ```
