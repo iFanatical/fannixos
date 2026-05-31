@@ -23,7 +23,7 @@
 	dejavu_fonts
 	liberation_ttf
 	noto-fonts
-	noto-fonts-emoji
+	noto-fonts-color-emoji
 	nerd-fonts.fira-code
 	nerd-fonts.jetbrains-mono
     ];
