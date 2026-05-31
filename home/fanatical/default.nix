@@ -28,7 +28,7 @@
     };
     
     home.file.".local/bin" = {
-	source = ./files/scripts;
+	source = ./scripts;
 	recursive = true;
     };
 
