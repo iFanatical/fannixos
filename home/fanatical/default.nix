@@ -8,7 +8,7 @@
     programs.home-manager.enable = true;
     programs.git = {
 	enable = true;
-	userName = "Fanatical";
-	userEmail = "theawpportunist@gmail.com";
+	user.name = "Fanatical";
+	user.email = "theawpportunist@gmail.com";
     };
 }
