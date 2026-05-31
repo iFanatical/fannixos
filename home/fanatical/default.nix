@@ -13,7 +13,11 @@
     programs.home-manager.enable = true;
     programs.git = {
 	enable = true;
-	user.name = "Fanatical";
-	user.email = "theawpportunist@gmail.com";
+	settings = {
+	    user = {
+	    	name = "Fanatical";
+		email = "theawpportunist@gmail.com";
+	    };
+	};
     };
 }
