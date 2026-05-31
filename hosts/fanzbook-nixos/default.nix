@@ -10,7 +10,7 @@
 	../../modules/services/ssh.nix
     ];
 
-    networking.hostName = "fanzbook-nix";
+    networking.hostName = "fanzbook-nixos";
     networking.networkmanager.enable = true;
 
     services.tlp.enable = true;
