@@ -11,6 +11,14 @@
 		    rev = "master";
 		    hash = "sha256-onsp8nDL37+Y+1vasSZFF1rhDjVxZ/bZGCwMRDalw8k=";
 		};
+
+		buildInputs = (old.buildInputs or []) ++ (with prev; [
+		    xorg.libxcb
+		    xorg.xcbutil
+		    xorg.xcbutilwm
+		    xorg.libXrender
+		]);
+
 		postPatch = (old.postPatch or "") + ''
 		    sed -i \
 			-e 's|^X11INC.*|X11INC = '"$(pkg-config --variable=includedir x11)"'|' \
