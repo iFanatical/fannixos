@@ -16,7 +16,7 @@
 		system = "x86_64-linux";
 		specialArgs = { inherit inputs; };
 		modules = [
-		    ./hosts/laptop
+		    ./hosts/fanzbook-nixos
 		    home-manager.nixosModules.home-manager
 		    {
 			home-manager.useGlobalPkgs = true;
