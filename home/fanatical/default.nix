@@ -5,12 +5,6 @@
     home.homeDirectory = "/home/fanatical";
     home.stateVersion = "25.11";
     
-    home.file.".xinitrc".text = ''
-    #!/usr/bin/env bash
-    feh --big-fill ~/.background.jpg 2>/dev/null || xsetroot -solid '#1e1e2e'
-    exec dwm 2> ~/.dwm.log;
-    '';
-
     programs.home-manager.enable = true;
     programs.git = {
 	enable = true;
@@ -21,4 +15,20 @@
 	    };
 	};
     };
+    
+    programs.alacrity.enable = true;
+
+    xdg.configFile = {
+	"picom/picom.conf".source = ./files/picom.conf;
+	"xsettingsd/xsettingsd.conf".source = ./files/xsettingsd.conf;
+	"dunst/dunstrc".source = ./files/dunstrc;
+	"alacritty/alacritty.toml".source = ./files/alacritty.toml;
+	"fastfetch/config.jsonc".source = ./files/fastfetch.jsonc;
+    };
+
+    home.file.".xinitrc".text = ''
+    #!/usr/bin/env bash
+    feh --big-fill ~/.background.jpg 2>/dev/null || xsetroot -solid '#1e1e2e'
+    exec dwm 2> ~/.dwm.log;
+    '';
 }

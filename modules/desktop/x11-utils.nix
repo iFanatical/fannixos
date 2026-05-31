@@ -9,7 +9,8 @@
 	xorg.xset
 	xorg.xsetroot
 	xorg.xrandr
-
+	
+	# decorations and daemons
 	picom
 	xsettingsd
 	sxhkd
@@ -20,5 +21,15 @@
 	feh
 	maim
 	glib
+
+	# apps
+	rofi
+	pcmanfm
+	pavucontrol
+	galculator
+	playerctl
+	brave
+	firefox
+	fastfetch
     ];
 }
