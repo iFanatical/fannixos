@@ -4,7 +4,7 @@ Multi-host NixOS flake.
 
 ## Hosts
 
-- `laptop` — HP ZBook Firefly 14 G7
+- `fanzbook-nixos` — HP ZBook Firefly 14 G7
 
 ## Installation
 
