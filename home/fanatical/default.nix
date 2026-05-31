@@ -1,5 +1,19 @@
 { config, pkgs, ... }:
 
+let
+    rofiConfig = pkgs.runCommand "rofi-config" {} ''
+	mkdir -p $out
+	cp -r ${./files/rofi}/* $out/
+	chmod +x $(find $out -name "*.sh")
+    '';
+
+    bashScripts = pkgs.runCommand "bash-scripts" {}''
+	mkdir -p $out
+	cp -r ${./scripts}/* $out/
+	chmod +x $out/*
+    '';
+in
+
 {
     home.username = "fanatical";
     home.homeDirectory = "/home/fanatical";
@@ -25,10 +39,14 @@
 	"alacritty/alacritty.toml".source = ./files/alacritty.toml;
 	"fastfetch/config.jsonc".source = ./files/fastfetch.jsonc;
 	"sxhkd/sxhkdrc".source = ./files/sxhkdrc;
+	rofi = {
+	    source = rofiConfig;
+	    recursive = true;
+	};
     };
     
     home.file.".local/bin" = {
-	source = ./scripts;
+	source = bashScripts;
 	recursive = true;
     };
 
