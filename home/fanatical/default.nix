@@ -16,7 +16,7 @@
 	};
     };
     
-    programs.alacrity.enable = true;
+    programs.alacritty.enable = true;
 
     xdg.configFile = {
 	"picom/picom.conf".source = ./files/picom.conf;
