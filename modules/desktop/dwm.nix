@@ -23,10 +23,10 @@
 
 		postPatch = (old.postPatch or "") + ''
 		    sed -i \
-			-e 's|^X11INC.*|X11INC =|' \
-	            	-e 's|^X11LIB.*|X11LIB =|' \
-		    	-e 's|^FREETYPEINC.*|FREETYPEINC =|' \
-		    	config.mk
+			-e 's|-I''${X11INC}||g' \
+            		-e 's|-I''${FREETYPEINC}||g' \
+            		-e 's|-L''${X11LIB}||g' \
+			config.mk
 		'';
 	    });
 	})
