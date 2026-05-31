@@ -8,7 +8,7 @@
     home.file.".xinitrc".text = ''
     #!/usr/bin/env bash
     feh --big-fill ~/.background.jpg 2>/dev/null || xsetroot -solid '#1e1e2e'
-    exec dwm
+    exec dwm 2> ~/.dwm.log;
     '';
 
     programs.home-manager.enable = true;
