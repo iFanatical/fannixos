@@ -1,0 +1,98 @@
+# ~/.config/sxhkd/sxhkdrc
+
+# terminal
+super + Return
+	alacritty
+
+# launchers and menus
+super + space
+	$HOME/.config/rofi/launchers/type-1/launcher.sh
+
+super + e
+	pcmanfm
+
+super + p
+	pavucontrol
+
+super + b
+	brave
+
+super + alt + b
+	firefox
+
+super + v
+	$SCRIPTS/cliphist.sh
+
+super + w
+	$SCRIPTS/fanos-menu
+
+super + shift + w
+	$SCRIPTS/fanos-set-wallpaper-feh
+
+# system / power
+ctrl + alt + l
+	$SCRIPTS/rofi-powermenu.sh
+
+ctrl + alt + o
+	$SCRIPTS/monitors.sh
+
+ctrl + alt + b
+	$SCRIPTS/rofi-bluetooth.sh
+
+alt + n
+	$SCRIPTS/dunst.sh --toggle
+
+alt + v
+	$SCRIPTS/vpn.sh --toggle
+
+super + alt + r
+	$SCRIPTS/record.sh
+
+alt + c
+	$SCRIPTS/xcolorpick.sh
+
+# screenshot
+Print
+	$SCRIPTS/screenshot.sh
+
+# media keys
+XF86AudioNext
+	playerctl next
+
+XF86AudioPrev
+	playerctl previous
+
+XF86AudioPlay
+	playerctl play-pause
+
+XF86AudioRaiseVolume
+	$SCRIPTS/volume-notif.sh --inc
+
+XF86AudioLowerVolume
+	$SCRIPTS/volume-notif.sh --dec
+
+XF86AudioMute
+	$SCRIPTS/volume-notif.sh --toggle
+
+XF86AudioMicMute
+	$SCRIPTS/volume-notif.sh --toggle-mic
+
+XF86Calculator
+	galculator
+
+# brightness
+XF86MonBrightnessUp
+	$SCRIPTS/brightness.sh --bcup
+
+XF86MonBrightnessDown
+	$SCRIPTS/brightness.sh --bcdown
+
+super + F1
+	$SCRIPTS/brightness.sh --ddcup
+
+super + F2
+	$SCRIPTS/brightness.sh --ddcdown
+
+# reload sxhkd
+super + Escape
+	pkill -USR1 -x sxhkd
