@@ -179,15 +179,16 @@
 	'';
     };
 
-    programs.starship = {
-	enable = true;
-	enableZshIntegration = true;
-	settings = builtins.fromTOML (builtins.readFile ./files/starship.toml);
-    };
-
-    programs.zoxide = {
-	enable = true;
-	enableZshIntegration = true;
+    programs = {
+	starship = {
+	    enable = true;
+	    enableZshIntegration = true;
+	    settings = builtins.fromTOML (builtins.readFile ./files/starship.toml);
+	};
+	zoxide = {
+	    enable = true;
+	    enableZshIntegration = true;
+	};
     };
 
     home.sessionVariables = {
