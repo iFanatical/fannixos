@@ -14,7 +14,6 @@
 	unzip
 	zip
 	rsync
-
 	bat
 	eza
 	fzf
@@ -22,7 +21,6 @@
 	jq
 	ripgrep
 	fd
-	greenclip
 	wireguard-tools
     ];
 }
