@@ -7,5 +7,6 @@
 	./dwm.nix
 	./audio.nix
 	./theming.nix
+	./brave.nix
     ];
 }
