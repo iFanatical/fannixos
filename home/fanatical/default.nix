@@ -18,7 +18,7 @@ in
 
     imports = [
 	./shell.nix
-	./wallpapers.nix
+	./wallpaper.nix
     ];
 
     home.username = "fanatical";
