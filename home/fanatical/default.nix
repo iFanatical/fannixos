@@ -18,7 +18,7 @@ in
     home.username = "fanatical";
     home.homeDirectory = "/home/fanatical";
     home.stateVersion = "25.11";
-    
+
     programs.home-manager.enable = true;
     programs.git = {
 	enable = true;
@@ -31,6 +31,17 @@ in
     };
     
     programs.alacritty.enable = true;
+    
+    xdg.userDirs = {
+	enable = true;
+	createDirectories = true;
+	pictures = "${config.home.homeDirectory}/Pictures";
+	documents = "${config.home.homeDirectory}/Documents";
+	download = "${config.home.homeDirectory}/Downloads";
+	videos = "${config.home.homeDirectory}/Videos";
+	music = "${config.home.homeDirectory}/Music";
+	desktop = "${config.home.homeDirectory}/Desktop";
+    };
 
     xdg.configFile = {
 	"picom/picom.conf".source = ./files/picom.conf;

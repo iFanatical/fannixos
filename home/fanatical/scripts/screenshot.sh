@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
+
+# define filename and save path
 FILENAME="$(date +'%Y-%m-%d-%H%M%S_screenshotcmd.png')"
 SAVEDIR=${XDG_PICTURES_DIR}/screenshots
+
+# make the save path, if it doesn't exist
+mkdir -p "$SAVEDIR"
+
+# define the full path for the script to save to
 SAVE_FULLPATH="$SAVEDIR/$FILENAME"
 
 # run screenshot command — bail out if maim fails or produces no output
