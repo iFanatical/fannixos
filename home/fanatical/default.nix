@@ -60,6 +60,11 @@ in
 	source = bashScripts;
 	recursive = true;
     };
+    
+    home.file.".themes/Breeze-Dark-TokyoNight" = {
+	source = ./themes/Breeze-Dark-TokyoNight;
+	recursive = true;
+    };
 
     home.file.".xinitrc".text = ''
     #!/usr/bin/env bash
@@ -83,4 +88,36 @@ in
 
     exec dwm 2> ~/.dwm.log;
     '';
+
+    gtk = {
+	enable = true;
+	theme = {
+	    name = "Breeze-Dark-TokyoNight";
+	};
+	iconTheme = {
+	    name = "Tela-circle-black-dark";
+	    package = pkgs.tela-circle-icon-theme;
+	};
+	cursorTheme = {
+	    name = "Adwaita";
+	    package = pkgs.adwaita-icon-theme;
+	    size = 24;
+	};
+	gtk3.extraConfig = {
+	    gtk-application-prefer-dark-theme = true;
+	};
+	gtk4.extraConfig = {
+	    gtk-application-prefer-dark-theme = true;
+	};
+    };
+    
+    home.pointerCursor = {
+	enable = true;
+	package = pkgs.adwaita-icon-theme;
+	name = "Adwaita";
+	size = 24;
+	gtk.enable = true;
+	x11.enable = true;
+    };
+
 }
