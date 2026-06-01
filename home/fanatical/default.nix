@@ -65,13 +65,18 @@ in
     #!/usr/bin/env bash
 
     export SCRIPTS="$HOME/.local/bin"
-    chmod +x "$SCRIPTS"/*.sh "$SCRIPTS"/fanos-* 2>/dev/null
+    export PATH="$HOME/.local/bin:$PATH"
+
+    if [ -f "$HOME/.config/user-dirs.dir" ]; then
+	set -a
+	. "$HOME/.config/user-dirs.dirs"
+	set +a
+    fi
 
     sxhkd -c "$HOME/.config/sxhkd/sxhkdrc" &
     picom &
     dunst &
     xsettingsd &
-
     greenclip daemon &
 
     feh --big-fill ~/.background.jpg 2>/dev/null || xsetroot -solid '#1e1e2e'
