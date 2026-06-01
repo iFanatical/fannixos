@@ -23,7 +23,7 @@ stdenv.mkDerivation {
 
     sed -i "1s|.*|#!${perl}/bin/perl|" $out/libexec/cmdemo/cmdemo_script
 
-    ln -s $out/libexec/cmdemo/cmdemo_script $out/bin/cmdemo_scripts
+    ln -s $out/libexec/cmdemo/cmdemo_script $out/bin/cmdemo_script
     ln -s $out/libexec/cmdemo/cmdemo $out/bin/cmdemo
     runHook postInstall
   '';
