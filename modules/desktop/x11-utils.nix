@@ -16,26 +16,8 @@
 	sxhkd
 	dunst
 	libnotify
-	haskellPackages.greenclip
 	xclip
 	feh
 	maim
-	glib
-	ddcutil
-	brightnessctl
-
-	# apps
-	rofi
-	pcmanfm
-	pavucontrol
-	pamixer
-	cliphist
-	xcolor
-	ffmpeg
-	galculator
-	playerctl
-	brave
-	firefox
-	fastfetch
     ];
 }

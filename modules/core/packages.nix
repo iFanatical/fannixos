@@ -22,5 +22,19 @@
 	ripgrep
 	fd
 	wireguard-tools
+	rofi
+	pcmanfm
+	pavucontrol
+	pamixer
+	ffmpeg
+	galculator
+	playerctl
+	brave
+	firefox
+	fastfetch
+	haskellPackages.greenclip
+	ddcutil
+	brightnessctl
+	glib
     ];
 }
