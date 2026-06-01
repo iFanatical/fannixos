@@ -36,5 +36,7 @@
 	ddcutil
 	brightnessctl
 	glib
+	gcc
+	vlc
     ];
 }
