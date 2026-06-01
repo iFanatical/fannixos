@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 iDIR="$SCRIPTS/icons"
-sDIR="$SCRIPTS/scripts"
 
 get_volume() {
     volume=$(pamixer --get-volume)
@@ -45,7 +44,7 @@ notify_user() {
             -h string:x-canonical-private-synchronous:volume_notif \
             -h int:value:"${vol%\%}" \
             " Volume" "$vol" &&
-        "$sDIR/sounds.sh" --volume
+        "$SCRIPTS/sounds.sh" --volume
     fi
 }
 
