@@ -6,6 +6,7 @@
 	../../modules/core
 	../../modules/hardware/intel.nix
 	../../modules/hardware/fingerprint.nix
+	../../modules/hardware/bluetooth.nix
 	../../modules/desktop
 	../../modules/services/ssh.nix
     ];

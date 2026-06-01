@@ -22,5 +22,7 @@
 	jq
 	ripgrep
 	fd
+	greenclip
+	wireguard-tools
     ];
 }
