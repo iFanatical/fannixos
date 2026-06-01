@@ -115,6 +115,12 @@ in
 	};
     };
     
+    qt = {
+	enable = true;
+	platformTheme.name = "gtk";
+	style.name = "gtk2";
+    };
+
     home.pointerCursor = {
 	enable = true;
 	package = pkgs.adwaita-icon-theme;
