@@ -23,6 +23,7 @@
 	ripgrep
 	fd
 	wireguard-tools
+	alacritty
 	rofi
 	pcmanfm
 	pavucontrol

@@ -36,8 +36,6 @@ in
 	};
     };
     
-    programs.alacritty.enable = true;
-
     xdg.userDirs = {
 	enable = true;
 	createDirectories = true;
@@ -83,7 +81,8 @@ in
     	        . "$HOME/.config/user-dirs.dirs"
     	        set +a
     	    fi
-
+	    
+	    cmdemo_script eDP-1 1.2
     	    sxhkd -c "$HOME/.config/sxhkd/sxhkdrc" &
     	    picom &
     	    dunst &
