@@ -20,10 +20,6 @@ in
     ./wallpaper.nix
   ];
 
-  home.packages = [
-    (pkgs.callPackage ./packages/cmdemo.nix {})
-  ];
-
   home.username = "fanatical";
   home.homeDirectory = "/home/fanatical";
   home.stateVersion = "25.11";
