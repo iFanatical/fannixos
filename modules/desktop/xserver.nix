@@ -18,7 +18,7 @@
 	Option "SuspendTime" "0"
 	Option "OffTime" "0"
     '';
-
+    
     fonts.packages = with pkgs; [
 	dejavu_fonts
 	liberation_ttf

@@ -7,5 +7,6 @@
 	./nix-settings.nix
 	./users.nix
 	./packages.nix
+	./xdg.nix
     ];
 }

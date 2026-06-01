@@ -55,7 +55,7 @@ in
 	    recursive = true;
 	};
     };
-    
+
     home.file.".local/bin" = {
 	source = bashScripts;
 	recursive = true;
