@@ -21,7 +21,7 @@
         Identifier "system-keyboard"
 	MatchIsKeyboard "on"
 	Option "AutoRepeat" "200 35"
-      '';
+      ''
     ];
   };
   services.libinput.enable = true;
