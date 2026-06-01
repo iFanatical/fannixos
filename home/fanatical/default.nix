@@ -72,31 +72,31 @@ in
 	};
 	".xinitrc".text = ''
 	    #!/usr/bin/env bash
-
-    	    export SCRIPTS="$HOME/.local/bin"
-    	    export PATH="$HOME/.local/bin:$PATH"
-
-    	    if [ -f "$HOME/.config/user-dirs.dir" ]; then
-    	        set -a
-    	        . "$HOME/.config/user-dirs.dirs"
-    	        set +a
-    	    fi
+	    
+	    export SCRIPTS="$HOME/.local/bin"
+	    export PATH="$HOME/.local/bin:$PATH"
+	    
+	    if [ -f "$HOME/.config/user-dirs.dir" ]; then
+	        set -a
+	        . "$HOME/.config/user-dirs.dirs"
+	        set +a
+	    fi
 	    
 	    cmdemo_script eDP-1 1.2
-    	    sxhkd -c "$HOME/.config/sxhkd/sxhkdrc" &
-    	    picom &
-    	    dunst &
-    	    xsettingsd &
-    	    greenclip daemon &
-
-    	    if [ -e "$HOME/source-files/background" ]; then
-    	        "$HOME/source-files/fehbg.sh"
-    	    else
-    	        xsetroot -solid '#1e1e2e'
-    	    fi
-    	    
-    	    dwmblocks &
-    	    exec dwm 2> ~/.dwm.log;
+	    sxhkd -c "$HOME/.config/sxhkd/sxhkdrc" &
+	    picom &
+	    dunst &
+	    xsettingsd &
+	    greenclip daemon &
+	    
+	    if [ -e "$HOME/source-files/background" ]; then
+	        "$HOME/source-files/fehbg.sh"
+	    else
+	        xsetroot -solid '#1e1e2e'
+	    fi
+	    
+	    dwmblocks &
+	    exec dwm 2> ~/.dwm.log;
     	    '';
     };
     gtk = {
