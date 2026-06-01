@@ -96,8 +96,8 @@
 	};
 
 	initContent = ''
-	    setopt autocd extendedglob nomatch correct_all
-	    unsetopt beep notify
+	    setopt autocd extendedglob correct_all
+	    unsetopt beep notify nomatch
 	    bindkey -e
 	    
 	    zstyle ':completion:*' menu select

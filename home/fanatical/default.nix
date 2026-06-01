@@ -89,7 +89,11 @@ in
     xsettingsd &
     greenclip daemon &
 
-    feh --big-fill ~/.background.jpg 2>/dev/null || xsetroot -solid '#1e1e2e'
+    if [ -e "$HOME/source-files/background" ]; then
+	"$HOME/source-files/fehbg.sh"
+    else
+	xsetroot -solid '#1e1e2e'
+    fi
     
     dwmblocks &
     exec dwm 2> ~/.dwm.log;

@@ -39,5 +39,6 @@
 	glib
 	gcc
 	vlc
+	imagemagick
     ];
 }
