@@ -26,6 +26,6 @@
 	noto-fonts-color-emoji
 	nerd-fonts.fira-code
 	nerd-fonts.jetbrains-mono
-	ubuntu_font_family
+	ubuntu-classic
     ];
 }
