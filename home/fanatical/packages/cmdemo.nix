@@ -14,6 +14,12 @@ stdenv.mkDerivation {
     make
     runHook postBuild
   '';
+  
+  # Fix upstream bug causing buffer overflow
+  postPatch = ''
+    substituteInPlace demo.c \
+      --replace "malloc(sizeof(char) * len);" "malloc(sizeof(char) * (len +1));"
+  '';
 
   installPhase = ''
     runHook preInstall
