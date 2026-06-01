@@ -19,7 +19,7 @@ stdenv.mkDerivation {
     runHook preInstall
     mkdir -p $out/bin $out/libexec/cmdemo
     install -m755 cmdemo $out/libexec/cmdemo/cmdemo
-    install -m755 ${./cmdemo/cmdemo_script} $out/lib/exec/cmdemo/cmdemo_script
+    install -m755 ${./cmdemo/cmdemo_script} $out/libexec/cmdemo/cmdemo_script
 
     sed -i "1s|.*|#!${perl}/bin/perl|" $out/libexec/cmdemo/cmdemo_script
 
