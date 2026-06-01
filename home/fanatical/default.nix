@@ -85,6 +85,7 @@ if [ -f "$HOME/.config/user-dirs.dir" ]; then
     set +a
 fi
 
+monitor-config.sh
 sxhkd -c "$HOME/.config/sxhkd/sxhkdrc" &
 picom &
 dunst &

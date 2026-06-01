@@ -4,7 +4,7 @@ if ls /sys/class/power_supply/BAT* &>/dev/null; then
     # ── LAPTOP ──────────────────────────────────────────────────────────────
     echo "Laptop detected — configuring eDP-1..."
     echo "Applying saturation..."
-    cmdemo_script eDP-1 1.2
+    vibrant-cli eDP-1 120
     xrandr --output eDP-1 --primary
  
     echo "Done."
@@ -24,8 +24,8 @@ else
     xrandr --output DP-1 --mode 1920x1080 --rate 100.00 --left-of DP-2 \
            --output DP-2 --mode 1920x1080 --rate 100.00 --primary
     echo "Applying saturation..."
-    cmdemo_script DP-1 1.2
-    cmdemo_script DP-2 1.2
+    vibrant-cli DP-2 120
+    vibrant-cli DP-1 120
  
     xrandr --output DP-2 --primary
  
