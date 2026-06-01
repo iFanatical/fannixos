@@ -15,6 +15,11 @@ let
 in
 
 {
+
+    imports = [
+	./shell.nix
+    ];
+
     home.username = "fanatical";
     home.homeDirectory = "/home/fanatical";
     home.stateVersion = "25.11";
@@ -31,7 +36,7 @@ in
     };
     
     programs.alacritty.enable = true;
-    
+
     xdg.userDirs = {
 	enable = true;
 	createDirectories = true;
