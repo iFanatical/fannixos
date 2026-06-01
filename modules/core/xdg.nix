@@ -11,4 +11,4 @@
     	XDG_TEMPLATES_DIR = "$HOME/Templates";
     	XDG_VIDEOS_DIR = "$HOME/Videos";
     };
-};
+}
