@@ -34,7 +34,11 @@ in
       };
     };
   };
-    
+  
+  home.packages = with pkgs; [
+    libvibrant
+  ];
+
   xdg.userDirs = {
     enable = true;
     createDirectories = true;
