@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 
 {
     time.timeZone = "America/Phoenix";
