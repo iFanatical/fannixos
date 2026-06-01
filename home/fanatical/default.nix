@@ -25,13 +25,20 @@ in
   home.stateVersion = "25.11";
   
   programs.home-manager.enable = true;
-  programs.git = {
-    enable = true;
-    settings = {
-    user = {
-      name = "Fanatical";
-      email = "theawpportunist@gmail.com";
+  programs = { 
+    git = {
+      enable = true;
+      settings = {
+      user = {
+        name = "Fanatical";
+        email = "theawpportunist@gmail.com";
+        };
       };
+    neovim = {
+      enable = true;
+      defaultEditor = true;
+      viAlias = true;
+      vimAlias = true;
     };
   };
   
