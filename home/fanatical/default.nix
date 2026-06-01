@@ -91,6 +91,10 @@ in
 
     gtk = {
 	enable = true;
+	font = {
+	    name = "JetBrainsMonoNL Nerd Font Propo";
+	    size = 10;
+	};
 	theme = {
 	    name = "Breeze-Dark-TokyoNight";
 	};
