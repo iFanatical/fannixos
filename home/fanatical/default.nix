@@ -34,11 +34,6 @@ in
         email = "theawpportunist@gmail.com";
         };
       };
-    neovim = {
-      enable = true;
-      defaultEditor = true;
-      viAlias = true;
-      vimAlias = true;
     };
   };
   
