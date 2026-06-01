@@ -185,6 +185,11 @@
 	settings = builtins.fromTOML (builtins.readFile ./files/starship.toml);
     };
 
+    programs.zoxide = {
+	enable = true;
+	enableZshIntegration = true;
+    };
+
     home.sessionVariables = {
 	SCRIPTS = "${config.home.homeDirectory}/.local/bin";
 	editor = "nvim";
