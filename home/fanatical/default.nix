@@ -85,7 +85,8 @@ in
     greenclip daemon &
 
     feh --big-fill ~/.background.jpg 2>/dev/null || xsetroot -solid '#1e1e2e'
-
+    
+    dwmblocks &
     exec dwm 2> ~/.dwm.log;
     '';
 
