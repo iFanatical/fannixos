@@ -8,7 +8,7 @@
 		    owner = "iFanatical";
 		    repo = "fandwmblocks";
 		    rev = "master";
-		    hash = "";
+		    hash = "sha256-P/paMpQRbsxX+g8qb7j1SjAFni426jjPHIEasmQdvCI=";
 		};
 	    });
 	})
