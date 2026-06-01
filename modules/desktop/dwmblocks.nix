@@ -8,14 +8,8 @@
 		    owner = "iFanatical";
 		    repo = "fandwmblocks";
 		    rev = "master";
-		    hash = "";
+		    hash = "sha256-pgRfMmFMf68dTFuwHgy1H3jrfeJ5oOaEKuL491U3bpA=";
 		};
-		postPatch = (old.postPatch or "") + ''
-		sed -i \
-		    -e 's|-I''${X11INC}||g' \
-		    -e 's|-L''${X11LIB}||g' \
-		    config.mk 2>/dev/null || true
-		'';
 	    });
 	})
     ];
