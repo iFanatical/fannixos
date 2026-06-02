@@ -40,5 +40,6 @@
     gcc
     vlc
     imagemagick
+    grc
   ];
 }
