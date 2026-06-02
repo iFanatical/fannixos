@@ -9,10 +9,10 @@
     plugins = [
       (pkgs.vimPlugins.nvim-treesitter.withPlugins (p: [
         p.lua
-	p.bash
-	p.nix
-	p.markdown
-	p.markdown-inline
+        p.bash
+        p.nix
+        p.markdown
+        p.markdown-inline
       ]))
     ];
   };
