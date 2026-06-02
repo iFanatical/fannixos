@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 dwmblocks &
-sleep 1; blueman-applet &
+# blueman doesn't like to render :(
+sleep 5; blueman-applet &
