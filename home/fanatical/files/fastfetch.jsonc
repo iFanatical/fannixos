@@ -50,7 +50,7 @@
         {
             "key": "│ {#31} {#39}cpu     {#keys}│",
             "type": "cpu",
-	    "format": "{#31}{all}"
+	    "format": "{#31}{pretty-name}"
         },
         {
             "key": "│ {#33} {#39}memory  {#keys}│",
