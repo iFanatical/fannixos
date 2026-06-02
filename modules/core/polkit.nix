@@ -15,4 +15,10 @@
       TimeoutStopSec = 10;
     };
   };
+  systemd.user.targets.fanatical-graphical-session = {
+    description = "Fanatical's graphical session";
+    bindsTo = [ "graphical-session.target" ];
+    wants = [ "graphical-session.target" ];
+    after = [ "graphical-session.target" ];
+  };
 }
