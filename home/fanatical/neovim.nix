@@ -12,7 +12,7 @@
         p.bash
         p.nix
         p.markdown
-        p.markdown-inline
+        p.markdown_inline
       ]))
     ];
   };
