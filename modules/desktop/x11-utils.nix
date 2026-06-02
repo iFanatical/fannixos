@@ -4,11 +4,11 @@
     environment.systemPackages = with pkgs; [
 	
 	# xorg packages
-	xorg.xrdb
-	xorg.xmodmap
-	xorg.xset
-	xorg.xsetroot
-	xorg.xrandr
+	xrdb
+	xmodmap
+	xset
+	xsetroot
+	xrandr
 	
 	# decorations and daemons
 	picom

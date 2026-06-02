@@ -4,6 +4,6 @@
   security.polkit.enable = true;
 
   environment.systemPackages = with pkgs; [
-    mate.mate-polkit
+    pkgs.mate-polkit
   ];
 }

@@ -42,7 +42,7 @@
     imagemagick
     grc
     gparted
-    wineWowPackages.stable
+    wineWow64Packages.stable
     winetricks
     nil
   ];
