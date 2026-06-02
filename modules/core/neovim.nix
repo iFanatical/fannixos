@@ -10,6 +10,8 @@ let
   ]);
 in
 {
+  environment.variables.VIMINIT = ''lua dofile(vim.fn.stdpath('config') .. '/init.lua')'';
+
   programs.neovim = {
     enable = true;
     defaultEditor = true;
