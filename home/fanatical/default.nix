@@ -41,7 +41,7 @@ in
   home.packages = with pkgs; [
     libvibrant
     discord
-    rustdesk-flutter
+    rustdesk
   ];
 
   xdg.userDirs = {
