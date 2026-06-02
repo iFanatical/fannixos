@@ -41,5 +41,6 @@
     vlc
     imagemagick
     grc
+    gparted
   ];
 }
