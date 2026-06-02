@@ -11,6 +11,7 @@
 		    hash = "sha256-pgRfMmFMf68dTFuwHgy1H3jrfeJ5oOaEKuL491U3bpA=";
 		};
 		patches = [ ];
+		postPatch = "";
 	    });
 	})
     ];
