@@ -6,6 +6,15 @@
     defaultEditor = true;
     viAlias = true;
     vimAlias = true;
+    plugins = [
+      (pkgs.vimPlugins.nvim-treesitter.withPlugins (p: [
+        p.lua
+	p.bash
+	p.nix
+	p.markdown
+	p.markdown-inline
+      ]))
+    ];
   };
 
   xdg.configFile = {

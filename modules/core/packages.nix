@@ -44,5 +44,6 @@
     gparted
     wineWowPackages.stable
     winetricks
+    nil
   ];
 }
