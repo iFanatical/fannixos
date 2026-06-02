@@ -17,7 +17,6 @@ in
     viAlias = true;
     vimAlias = true;
     plugins = [ customTreesitter ];
-    ];
   };
 
   xdg.configFile = {
