@@ -48,8 +48,8 @@
 	    "format": "{#35}{pretty-name}"
         },
         {
-            "key": "│ {#31}󰏖 {#39}pkgs    {#keys}│",
-            "type": "packages",
+            "key": "│ {#31} {#39}cpu     {#keys}│",
+            "type": "cpu",
 	    "format": "{#31}{all}"
         },
         {
