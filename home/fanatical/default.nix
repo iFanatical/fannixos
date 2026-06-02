@@ -19,6 +19,7 @@ in
     ./shell.nix
     ./wallpaper.nix
     ./neovim.nix
+    ./dwm-autostart.nix
   ];
 
   home.username = "fanatical";
@@ -84,7 +85,7 @@ in
 export SCRIPTS="$HOME/.local/bin"
 export PATH="$HOME/.local/bin:$PATH"
 
-if [ -f "$HOME/.config/user-dirs.dir" ]; then
+if [ -f "$HOME/.config/user-dirs.dirs" ]; then
     set -a
     . "$HOME/.config/user-dirs.dirs"
     set +a
