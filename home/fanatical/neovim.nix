@@ -1,19 +1,22 @@
 { pkgs, ... }:
 
+let
+  customTreesitter = pkgs.vimPlugins.nvim-treesitter.withPlugins (p: with p; [
+    bash
+    lua
+    nix
+    markdown
+    markdown_inline
+  ]);
+in
+
 {
   programs.neovim = {
     enable = true;
     defaultEditor = true;
     viAlias = true;
     vimAlias = true;
-    plugins = [
-      (pkgs.vimPlugins.nvim-treesitter.withPlugins (p: [
-        p.lua
-        p.bash
-        p.nix
-        p.markdown
-        p.markdown_inline
-      ]))
+    plugins = [ customTreesitter ];
     ];
   };
 
