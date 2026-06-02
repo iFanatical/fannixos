@@ -82,8 +82,6 @@ in
 export SCRIPTS="$HOME/.local/bin"
 export PATH="$HOME/.local/bin:$PATH"
 
-systemctl --user start fanatical-graphical-session.target
-
 if [ -f "$HOME/.config/user-dirs.dir" ]; then
     set -a
     . "$HOME/.config/user-dirs.dirs"
@@ -96,6 +94,7 @@ picom &
 dunst &
 xsettingsd &
 greenclip daemon &
+/run/current-system/sw/libexec/polkit-kde-authentication-agent-1 &
 
 if [ -e "$HOME/source-files/background" ]; then
     "$HOME/source-files/fehbg.sh"
