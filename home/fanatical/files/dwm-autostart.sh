@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-dwmblocks &
-# blueman doesn't like to render :(
-sleep 5; blueman-applet &
+# buffer to allow pipewire to finish intializing
+sleep 2; dwmblocks &
