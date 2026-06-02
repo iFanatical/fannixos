@@ -42,5 +42,7 @@
     imagemagick
     grc
     gparted
+    wineWowPackages.stable
+    winetricks
   ];
 }

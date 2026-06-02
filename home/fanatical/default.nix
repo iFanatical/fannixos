@@ -40,6 +40,8 @@ in
   
   home.packages = with pkgs; [
     libvibrant
+    discord
+    rustdesk-flutter
   ];
 
   xdg.userDirs = {
@@ -94,6 +96,7 @@ picom &
 dunst &
 xsettingsd &
 greenclip daemon &
+blueman-applet &
 ${pkgs.mate.mate-polkit}/libexec/polkit-mate-authentication-agent-1 &
 
 if [ -e "$HOME/source-files/background" ]; then
