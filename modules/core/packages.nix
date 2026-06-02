@@ -45,5 +45,6 @@
     wineWow64Packages.stable
     winetricks
     nil
+    tree-sitter
   ];
 }
