@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-blueman-applet &
 dwmblocks &
+sleep 1; blueman-applet &
