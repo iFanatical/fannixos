@@ -94,7 +94,7 @@ picom &
 dunst &
 xsettingsd &
 greenclip daemon &
-/run/current-system/sw/libexec/polkit-kde-authentication-agent-1 &
+${pkgs.kdePackages.polkit-kde-agent-1}/libexec/polkit-kde-authentication-agent-1 &
 
 if [ -e "$HOME/source-files/background" ]; then
     "$HOME/source-files/fehbg.sh"
