@@ -21,4 +21,5 @@ in
       };
     };
   };
+  environment.variables.VIMINIT = "lua dofile(vim.fn.stdpath('config') .. '/init.lua')";
 }
