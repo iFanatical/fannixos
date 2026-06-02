@@ -97,7 +97,7 @@ dunst &
 xsettingsd &
 greenclip daemon &
 blueman-applet &
-${pkgs.mate.mate-polkit}/libexec/polkit-mate-authentication-agent-1 &
+${pkgs.mate-polkit}/libexec/polkit-mate-authentication-agent-1 &
 
 if [ -e "$HOME/source-files/background" ]; then
     "$HOME/source-files/fehbg.sh"
