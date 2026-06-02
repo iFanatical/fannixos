@@ -82,8 +82,7 @@ in
 export SCRIPTS="$HOME/.local/bin"
 export PATH="$HOME/.local/bin:$PATH"
 
-systemctl --user import-environment DISPLAY XAUTHORITY DBUS_SESSION_BUS_ADDRESS
-systemctl --user start graphical-session.target
+systemctl --user start fanatical-graphical-session.target
 
 if [ -f "$HOME/.config/user-dirs.dir" ]; then
     set -a
