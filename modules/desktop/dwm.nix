@@ -15,10 +15,10 @@
 		nativeBuildInputs = (old.nativeBuildInputs or []) ++ [ prev.pkg-config ];
 
 		buildInputs = (old.buildInputs or []) ++ (with prev; [
-		    xorg.libxcb
-		    xorg.xcbutil
-		    xorg.xcbutilwm
-		    xorg.libXrender
+		    libxcb
+		    xcbutil
+		    xcbutilwm
+		    libXrender
 		]);
 
 		postPatch = (old.postPatch or "") + ''
