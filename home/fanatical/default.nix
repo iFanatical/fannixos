@@ -96,7 +96,6 @@ picom &
 dunst &
 xsettingsd &
 greenclip daemon &
-blueman-applet &
 ${pkgs.mate-polkit}/libexec/polkit-mate-authentication-agent-1 &
 
 if [ -e "$HOME/source-files/background" ]; then
@@ -105,7 +104,6 @@ else
     xsetroot -solid '#1e1e2e'
 fi
 
-dwmblocks &
 exec dwm 2> ~/.dwm.log;
     '';
   };
