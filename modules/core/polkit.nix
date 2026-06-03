@@ -6,16 +6,14 @@
   environment.systemPackages = with pkgs; [
     mate-polkit
   ];
-  systemd.user.services.polkit-mate = {
-    description = "MATE polkit authentication agent";
-    wantedBy = [ "graphical-session.target" ];
-    partOf = [ "graphical-session.target" ];
-    after = [ "graphical-session.target" ];
-    serviceConfig = {
-      Type = "simple";
-      ExecStart = "${pkgs.mate-polkit}/libexec/polkit-mate-authentication-agent-1";
-      Restart = "on-failure";
-      RestartSec = 3;
-    };
+  
+    environment.etc."dwm/autostart.sh" = {
+    text = ''
+#!/usr/bin/env bash
+dwmblocks &
+${pkgs.mate-polkit}/libexec/polkit-mate/polkit-mate-authentication-agent-1 &
+    '';
+    mode = "0755";
+
   };
 }
