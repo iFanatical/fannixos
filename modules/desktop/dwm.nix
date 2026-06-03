@@ -9,7 +9,7 @@
 		    owner = "iFanatical";
 		    repo = "fandwm";
 		    rev = "master";
-		    hash = "";
+		    hash = "sha256-9bVrrjiJGVJAckcD3pFQGjTDPc9VkgT3YHwFmYmLMLU=";
 		};
 		
 		nativeBuildInputs = (old.nativeBuildInputs or []) ++ [ prev.pkg-config ];
