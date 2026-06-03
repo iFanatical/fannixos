@@ -3,7 +3,7 @@
 {
   programs.zsh = {
     enable = true;
-    autosuggestion.enable = true;
+    autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
     };
     programs.nix-index = {
