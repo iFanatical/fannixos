@@ -51,5 +51,8 @@
     zoxide
     starship
     mousepad
+    libvibrant
+    discord
+    rustdesk-flutter
   ];
 }
