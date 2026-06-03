@@ -11,7 +11,7 @@
     text = ''
 #!/usr/bin/env bash
 dwmblocks &
-${pkgs.mate-polkit}/libexec/polkit-mate/polkit-mate-authentication-agent-1 &
+${pkgs.mate-polkit}/libexec/polkit-mate-authentication-agent-1 &
     '';
     mode = "0755";
 
