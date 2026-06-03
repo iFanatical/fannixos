@@ -10,5 +10,5 @@
       enable = true;
       enableZshIntegration = true;
     };
-  users.defaultUserShell = pkgs.zsh
+  users.defaultUserShell = pkgs.zsh;
 }
