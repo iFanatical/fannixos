@@ -50,5 +50,6 @@
     tree-sitter
     zoxide
     starship
+    mousepad
   ];
 }
