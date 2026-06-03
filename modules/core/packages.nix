@@ -48,5 +48,7 @@
     winetricks
     nil
     tree-sitter
+    zoxide
+    starship
   ];
 }
