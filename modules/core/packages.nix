@@ -3,6 +3,8 @@
 {
   environment.systemPackages = with pkgs; [
     vim
+    neovim
+    starship
     bc
     git
     wget
