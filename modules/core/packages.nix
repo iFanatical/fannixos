@@ -27,7 +27,7 @@
     alacritty
     rofi
     pcmanfm
-    pwvucontrol
+    pavucontrol
     pamixer
     ffmpeg
     galculator
