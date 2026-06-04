@@ -8,5 +8,6 @@
     environment.variables = {
 	EDITOR = lib.mkForce "nvim";
 	VISUAL = lib.mkForce "nvim";
+	SSH_ASKPASS_REQUIRE = "never";
     };
 }
